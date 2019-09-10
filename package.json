@@ -6,8 +6,8 @@
   "scripts": {
     "build-watch": "webpack -w",
     "start-server": "./node_modules/.bin/nodemon ./server/index.js",
-    "start": "npm run build-watch & npm run start-server",
-    "seed": "node ./server/database/utils/seed.js"
+    "seed": "node ./server/database/utils/seed.js",
+    "start": "npm run seed & npm run build-watch & npm run start-server"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
